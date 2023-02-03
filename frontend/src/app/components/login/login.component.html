@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="container-content">
+        <h1>DUNDER<br>MIFFLIN<br></h1>
+        <h3>PAPER COMPANY</h3>
+    </div>
+    <div class="content-form">
+        <div class="input-content">
+            <input type="text" placeholder="Email" required name = "email" [(ngModel)] = "user.email">
+        </div>
+        <div class="input-content">
+            <input type="password" placeholder="Senha" required name ="senha" [(ngModel)] = "user.senha">
+        </div>
+        <div class="container-buttons">
+            <button (click) = "verificar()">
+                Entrar
+            </button>
+            <a href="" routerLink = "/cadastrar">
+                <button>
+                    Cadastrar
+                </button>
+            </a>
+        </div>
+        <div class="message">
+            <h1></h1>
+        </div>
+</div>

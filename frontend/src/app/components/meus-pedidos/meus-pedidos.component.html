@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="product-data" *ngFor="let p of meuspedidos">
+        <div class="product-image">
+        </div>
+        <div class="product-content">
+            <h1>{{p.nome_pedido}}</h1>
+            <h1>ID do Produto : {{p.id_produto}}</h1>
+            <h1>R$ : {{p.preco_produto}}</h1>
+            <h1>Qtd : {{p.quantidade}}</h1>
+            <h1>Endereço : {{p.cidade}}</h1>
+            <h1>Código do pedido : {{p.id}}</h1>
+        </div>
+    </div>
+</div>

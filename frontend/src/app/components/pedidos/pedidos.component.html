@@ -1,0 +1,44 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+</head>
+<div class="nav-bar">
+    <div class="nav-bar-left">
+        <h1>dunder<br>mifflin</h1>
+    </div>
+    <div class="nav-bar-right">
+        <div class="nav-bar-element">
+            <a href="" routerLink="/pedidos">Pedidos</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink="/adm">Painel Geral</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink="/adm/adm-profile">Meu perfil</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink="">Sair</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="product-register" *ngFor="let p of pedidos">
+        <div class="product-image">
+        </div>
+        <div class="product-content">
+            <div class="product-content-less">
+                <span>Nome : {{p.nome_pedido}}</span>
+                <span>Usuario : {{p.id_user}}</span>
+                <span>Produto : {{p.id_produto}}</span>
+                <span>Preço(R$):{{p.preco_produto}}</span>
+                <span>Endereço : {{p.cidade}}</span>
+            </div>
+            <div class="product-content-more">
+                <span>Qtd solicitada : {{p.quantidade}}</span>
+                <span>Titular : {{p.titular_cartao}}</span>
+                <span>Nº Cartão : {{p.numero_cartao}}</span>
+                <span>CVV : {{p.cvv}} / Validade : {{p.validade}}</span>
+                <span>Destinatário : {{p.destinatario}}</span>
+            </div>
+        </div>
+    </div>
+</div>

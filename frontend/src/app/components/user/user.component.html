@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="products">
+        <div class="products-data" *ngFor = "let p of products">
+            <div class="products-image">
+            </div>
+            <div class="products-content">
+                <h1 (click) = "goToProduto(p.id)">{{p.product_name}}</h1>
+                <h2>{{p.product_price}}R$</h2>
+                <p>Estoque:{{p.product_quant}}</p>
+            </div>
+        </div>
+    </div>
+</div>

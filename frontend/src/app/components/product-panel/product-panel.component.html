@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+</head>
+<div class="nav-bar">
+    <div class="nav-bar-left">
+        <h1>dunder<br>mifflin</h1>
+    </div>
+    <div class="nav-bar-right">
+        <div class="nav-bar-element">
+            <a href="" routerLink="adm">Painel Geral</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="">Meu perfil</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink="">Sair</a>
+        </div>
+    </div>
+</div>
+<div class="title-content">Painel de controle do gerente</div>
+<div class="panel-buttons">
+    <a href="" routerLink="/adm">
+        <button>Cancelar</button>
+    </a>
+</div>
+<div class="container">
+    <div class="form-image">
+        <input type="file">
+    </div>
+    <div class="form-content">
+        <label for="">Nome:</label>
+        <input type="text" [(ngModel)] = "product.product_name">
+        <label for="">Preço(R$):</label>
+        <input type="text" [(ngModel)] = "product.product_price">
+        <label for="">Quantidade</label>
+        <input type="text" [(ngModel)] = "product.product_quant">
+        <div class="form-button">
+            <button (click) = "createProduct()">Adicionar Produto</button>
+        </div>
+    </div>
+
+</div>
+<router-outlet></router-outlet>

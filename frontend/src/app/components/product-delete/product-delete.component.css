@@ -1,0 +1,100 @@
+.nav-bar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar-left{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    line-height:25px;
+}
+.nav-bar-left h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20pt;
+}
+.nav-bar-right{
+    font-family: 'Open';
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav-bar-element{
+    display: flex;
+    margin: 10px;
+}
+.nav-bar-element a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.title-content{
+    font-weight: bolder;
+    background-color:azure;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+.product-register{
+    display: flex;
+    flex-direction: row;
+}
+.product-content{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.product-image{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+    background-color: whitesmoke;
+}
+.product-content input{
+    width: 250px;
+    border:none;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+.product-content input:focus{
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+.product-content label{
+    font-weight: 600;
+}
+.product-button{
+    background-color: whitesmoke;
+    display: flex;
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+.delete-icon{
+    display: flex;
+    width:25px;
+    height: 20px;
+}
+.cancel-button{
+    display: flex;
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="product-data">
+        <div class="product-image">
+        </div>
+        <div class="product-content">
+            <h1>{{product.product_name}}</h1>
+            <h2>{{product.product_price}} R$ </h2>
+            <h3>Estoque : {{product.product_quant}}</h3>
+            <h4>Quantidade :</h4>
+            <input type="number"[(ngModel)] = "pedido.quantidade">
+        </div>
+        <div class="payment">
+            <label for="">Titular do cartão</label>
+            <input type="text"[(ngModel)] = "pedido.titular_cartao">
+            <label for="">Número do Cartao</label>
+            <input type="number" [(ngModel)] = "pedido.numero_cartao" >
+            <div class="card-data">
+                <div class="card-data-cvv">
+                    <label for="">CVV</label>
+                    <input type="number" [(ngModel)] = "pedido.cvv">
+                </div>
+                <div class="card-data-validade">
+                    <label for="">Validade</label>
+                    <input type="text" placeholder="mês/ano" [(ngModel)] = "pedido.validade">
+                </div>
+            </div>
+            <div class="payment-button">
+                <button (click) = "createPedido()">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+</div>

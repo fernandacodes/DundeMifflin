@@ -1,0 +1,96 @@
+.nav-bar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar-left{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    line-height:25px;
+}
+.nav-bar-left h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20pt;
+}
+.nav-bar-right{
+    font-family: 'Open';
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav-bar-element{
+    display: flex;
+    margin: 10px;
+}
+.nav-bar-element a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.title-content{
+    font-weight: bolder;
+    background-color:azure;
+    padding: 10px;
+}
+.panel-buttons{
+    margin:50px;
+}
+.panel-buttons button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-register{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.products-image{
+    width: 280px;
+    height: 250px;
+    background-color:whitesmoke;
+}
+.product-content{
+    display: flex;
+    flex-direction: column;
+}
+.product-content label{
+    font-weight: 600;
+    margin: 10px;
+}
+.product-content p{
+    text-align: justify;
+    margin-left: 15px;
+}
+.content-buttons{
+    display: flex;
+    align-items:end;
+    margin-left: 100px;
+}
+.edit{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+}
+.edit:hover{
+    padding: 5px;
+}
+.delete:hover{
+    padding: 5px;
+}
+

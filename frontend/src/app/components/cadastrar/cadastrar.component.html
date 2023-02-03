@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="logo-content">
+        <h1 style=
+        "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        line-height:60px;
+        font-size: 50pt;
+        ">DUNDER<br>MIFFLIN</h1><h3 style="
+        letter-spacing:5px;
+        ">PAPER COMPANY</h3>
+    </div>
+    <div class="form-content">
+        <h1>Cadastrar</h1>
+        <label for="">Nome:</label>
+        <input type="text" name="name" [(ngModel)] = "user.nome" required>
+        <label for="">Sobrenome:</label>
+        <input type="text" name="sobrenome" [(ngModel)] = "user.sobrenome" required>
+        <label for="">Telefone:</label>
+        <input type="text" placeholder="(XX):XXXX-XXXX" [(ngModel)] = "user.telefone" required>
+        <label for="">CPF:</label>
+        <input type="text" name="CPF" placeholder="XXX-XXX-XXX-XX" [(ngModel)] = "user.cpf" required >
+        <label for="">Endereço:</label>
+        <input type="text" name="Adress" [(ngModel)] = "user.cidade" required>
+        <label for="">Email:</label>
+        <input type="text" name = "email" [(ngModel)] = "user.email" required>
+        <label for="">Senha:</label>
+        <input type="text" name = "senha" [(ngModel)] = "user.senha" required>
+        <div class="form-buttons">
+            <button (click) = "createUser()">Finalizar</button>
+        </div>
+    </div>
+</div>

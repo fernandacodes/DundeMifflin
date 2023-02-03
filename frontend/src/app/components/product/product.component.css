@@ -1,0 +1,91 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+.product-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product-image{
+    background-color: whitesmoke;
+    display: flex;
+    width: 250px;
+    height: 180px;
+}
+.payment{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.payment label{
+    font-weight: 600;
+    margin: 10px;
+}
+.payment input{
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.payment input:focus{
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+.card-data{
+    display: flex;
+    flex-direction: row;
+}
+.card-data-cvv{
+    display: flex;
+    flex-direction: column;
+}
+.card-data-validade{
+    display: flex;
+    flex-direction: column;
+}
+.payment-button{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.payment-button button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px;
+    background-color: green;
+}
+.product-content{
+    display: flex;
+    flex-direction: column;
+}
+.product-content input{
+    width: 100px;
+}
+.product-content h1{
+    margin: 10px;
+    font-size:15pt;
+}
+.product-content h2{
+    margin: 10px;
+}
+.product-content h3{
+    margin: 10px;
+}
+.product-content h4{
+    margin: 10px;
+}
+.product-content input{
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.product-content input:focus{
+    outline:0;
+    border-bottom: 2px solid black;
+}

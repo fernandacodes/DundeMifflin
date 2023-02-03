@@ -1,0 +1,30 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="profile-content">
+        <div class="profile-image">
+            <input type="file" name="" id="">
+        </div>
+        <div class="profile-form">
+            <label for="">Nome : </label>
+            <input type="text" [(ngModel)] = "user.nome">
+            <label for="">Sobrenome : </label>
+            <input type="text" [(ngModel)] = "user.sobrenome">
+            <label for="">Email : </label>
+            <input type="text" [(ngModel)] = "user.email">
+            <label for="">Senha : </label>
+            <input type="text" [(ngModel)] = "user.senha">
+            <label for="">CPF : </label>
+            <input type="text" [(ngModel)] = "user.cpf">
+            <label for="">Telefone : </label>
+            <input type="text" [(ngModel)] = "user.telefone">
+            <label for="">Cidade : </label>
+            <input type="text" [(ngModel)] = "user.cidade">
+            <div class="update-buttons" (click) = "userUpdate()">
+                <div class="update-icon">
+                    <img src="/assets/refresh-svgrepo-com.svg" alt="">
+                </div>
+                Atualizar
+            </div>
+        </div>
+    </div>
+</div>

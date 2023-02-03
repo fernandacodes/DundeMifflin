@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+</head>
+<div class="nav-bar">
+    <div class="nav-bar-left">
+        <h1>dunder<br>mifflin</h1>
+    </div>
+    <div class="nav-bar-right">
+        <div class="nav-bar-element">
+            <a href="" routerLink = "/pedidos">Pedidos</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink = "/adm">Painel Geral</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink = "/adm/adm-profile">Meu perfil</a>
+        </div>
+        <div class="nav-bar-element">
+            <a href="" routerLink="">Sair</a>
+        </div>
+    </div>
+</div>
+<div class="title-content">Painel de controle do gerente</div>
+<div class="panel-buttons">
+    <a href="" routerLink="/product-panel">
+        <button>Novo Produto+</button>
+    </a>
+ </div>
+ <div class="products">
+    <div class="product-register" *ngFor = "let p of products">
+        <div class="products-image">
+        </div>
+        <div class="product-content">
+            <label for="">Nome : </label>
+            <p>{{p.product_name}}</p>
+            <label for="">Preço (R$) : </label>
+            <p>{{p.product_price}}</p>
+            <label for="">Quantidade : </label>
+            <p>{{p.product_quant}}</p>
+            <label for="">ID : </label>
+            <p>{{p.id}}</p>
+        </div>
+        <div class="content-buttons">
+            <a href="" class="delete" routerLink="/product-delete/{{p.id}}">
+                <img src="/assets/folderredunlocked_93460.svg" alt="">
+            </a>
+            <a href="" class="edit" routerLink="/product-update/{{p.id}}">
+                <img src="/assets/3643749-edit-pen-pencil-write-writing_113397.svg" alt="">
+            </a>
+        </div>
+    </div>
+ </div>

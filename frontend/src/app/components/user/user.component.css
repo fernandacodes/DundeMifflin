@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    height: 900px;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.products-data{
+    cursor: pointer;
+    width: 200px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin: 15px;
+    display:flex;
+    flex-direction: column;
+}
+.products-data h1{
+    font-size:15pt;
+    text-align: center;
+}
+.products-data h1:hover{
+    color: orange;
+}
+.products-data h2{
+    text-align: center;
+    font-size: 10pt;
+}
+.products-data p{
+    text-align: center;
+}
+.products-image{
+    width: 180px;
+    height: 200px;
+    background-color: whitesmoke;
+}
